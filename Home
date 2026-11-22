@@ -1,0 +1,17 @@
+<section id="home" class="home">
+    <div class="home-text">
+        <h1>Hello, I'm <span>Nguyen Ba Tin</span></h1>
+
+        <h2>Information Technology Student</h2>
+
+        <p>
+            Welcome to my personal website!
+            I am Nguyen Ba Tin, a student majoring
+            in Information Technology. I am passionate
+            about programming, technology, and learning
+            new things every day.
+        </p>
+
+        <a href="#about" class="btn">Discover More</a>
+    </div>
+</section>
