@@ -1,318 +1,146 @@
 
-/* General Settings */
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7fc;
-    color: #1e293b;
+    background-color: white;
+    color: black;
+    padding: 15px;
 }
 
-/* Header */
+/* HEADER */
 header {
-    width: 100%;
-    padding: 20px 8%;
-    background-color: #172554;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    border: 3px solid black;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.logo {
-    color: white;
+header h1 {
     font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
 }
 
-nav {
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #60a5fa;
-}
-
-/* All Sections */
-section {
-    padding: 80px 10%;
-    min-height: 400px;
-}
-
-.heading {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 40px;
-}
-
-.heading span {
-    color: #2563eb;
-}
-
-/* Home */
-.home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    min-height: 600px;
-}
-
-.home-content {
-    max-width: 600px;
-}
-
-.home-content h3 {
-    font-size: 20px;
-    color: #475569;
-}
-
-.home-content h1 {
-    font-size: 45px;
-    margin: 15px 0;
-}
-
-.home-content h1 span {
-    color: #2563eb;
-}
-
-.home-content h2 {
-    font-size: 24px;
-    color: #475569;
-}
-
-.home-content p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 25px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 13px 25px;
-    background-color: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #172554;
-}
-
-/* Profile Image */
-.home-image img {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid #2563eb;
-}
-
-/* About */
-.about {
-    background-color: white;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.8;
-}
-
-.about-content h2 {
-    color: #2563eb;
-    margin-bottom: 15px;
-}
-
-.about-content p {
-    margin-bottom: 15px;
-}
-
-.information {
-    margin-top: 25px;
-}
-
-/* Education */
-.education {
-    text-align: center;
-}
-
-.education-box {
-    max-width: 700px;
-    background-color: white;
-    padding: 35px;
-    margin: auto;
-    border-left: 6px solid #2563eb;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.education-box h2 {
-    color: #2563eb;
-    margin-bottom: 15px;
-}
-
-.education-box h3 {
-    margin-bottom: 20px;
-}
-
-.education-box p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* Skills */
-.skills {
-    background-color: white;
-}
-
-.skills-container {
+/* INTRODUCTION */
+.intro {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.skill-box {
-    background-color: #eff6ff;
-    padding: 30px 20px;
-    border-radius: 12px;
+.intro-box {
+    border: 3px solid black;
+    padding: 20px;
     text-align: center;
-    transition: 0.3s;
 }
 
-.skill-box:hover {
-    transform: translateY(-8px);
-    background-color: #dbeafe;
+/* MAIN CONTENT */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-.skill-box h2 {
-    color: #2563eb;
-    margin-bottom: 15px;
+.container section {
+    border: 3px solid black;
+    padding: 30px 15px;
+    text-align: center;
+    min-height: 100px;
 }
 
-.skill-box p {
+.container h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.container p {
     line-height: 1.6;
 }
 
-/* Contact */
-.contact {
-    text-align: center;
+/* FULL WIDTH SECTIONS */
+.goal,
+.education {
+    grid-column: span 2;
 }
 
-.contact > p {
-    margin-bottom: 25px;
-}
-
-.contact-information {
-    line-height: 2.2;
-    margin-bottom: 25px;
-}
-
-.contact-information a {
-    color: #2563eb;
-}
-
-button {
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 13px 30px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #172554;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
-    background-color: #172554;
-    color: white;
-    padding: 25px;
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 20px;
     text-align: center;
 }
 
 footer a {
-    display: inline-block;
-    color: #93c5fd;
-    margin-top: 12px;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 900px) {
+footer p {
+    margin-top: 10px;
+}
 
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
+/* TABLET VIEW: 772px - 991px */
+@media screen and (min-width: 772px) and (max-width: 991px) {
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .home {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .skills-container {
+    .container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 22px;
     }
 
 }
 
-@media screen and (max-width: 600px) {
+/* MOBILE VIEW: BELOW 772px */
+@media screen and (max-width: 771px) {
 
-    section {
-        padding: 60px 6%;
+    body {
+        padding: 8px;
     }
 
-    .home-content h1 {
-        font-size: 32px;
+    header {
+        padding: 20px 10px;
     }
 
-    .home-content h2 {
-        font-size: 19px;
+    header h1 {
+        font-size: 18px;
     }
 
-    .home-image img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .skills-container {
+    .intro {
         grid-template-columns: 1fr;
     }
 
-    nav {
-        gap: 12px;
+    .container {
+        grid-template-columns: 1fr;
     }
 
-    nav a {
-        font-size: 13px;
+    .container section {
+        grid-column: span 1;
+        padding: 25px 12px;
+    }
+
+    .container h2 {
+        font-size: 19px;
+    }
+
+    .intro-box {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
     }
 
 }
